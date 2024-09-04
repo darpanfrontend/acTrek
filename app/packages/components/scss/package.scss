@@ -1,0 +1,28 @@
+.swiper-slide{
+    &:nth-child(2n) {
+        width: 60%;
+    }
+    &:nth-child(3n) {
+        width: 40%;
+    }
+}
+.include,.exclude{
+    li{
+        padding-left:1.5rem;
+        position:relative;
+        &:before{
+            content:'';
+            @apply absolute top-1.5 bg-green-900 w-4 h-4 left-0 rounded-full;
+        }
+        &:not(:last-child){
+            @apply mb-4;
+        }
+    }
+}
+.exclude{
+    li{
+        &:before{
+            @apply bg-[#fc6220];
+        }
+    }
+}

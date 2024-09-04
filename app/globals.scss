@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.swiper-button-next,.swiper-button-prev{
+    @apply bg-green-900 p-4 rounded-full;
+    width:80px!important;
+    height:80px!important;
+}
+.swiper-button-next{
+    left:-40px!important;
+    &:after{
+        @apply pl-8 text-gray-900 text-2xl !important;
+    }
+}
+.swiper-button-prev{
+    right:-40px!important;
+    left:auto !important;
+    :after{
+        @apply pr-8 text-gray-900 text-2xl !important;
+    }
+}
+.dropdown{
+    &:hover{
+        .dropdown-content{
+            @apply opacity-100 pointer-events-auto;
+        }
+    }
+}
