@@ -1,5 +1,5 @@
 export default function get_image_from_path(path: string): string {
-    return `http://127.0.0.1:8000${path}`;
+    return `https://kanchenjunga-treks.com${path}`;
 }
 export const sectionBg = 'bg-green-100 bg-opacity-50';
 function stripTags(html: string): string {

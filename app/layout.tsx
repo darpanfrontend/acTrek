@@ -7,7 +7,7 @@ import { bodyFont } from './fonts';
 interface LayoutProps {
   children:ReactNode
 }
-
+export const revalidate = 0;
 async function getData() {
   const res = await fetch(`${process.env.APIURL}/company-data`)
   if (!res.ok) {

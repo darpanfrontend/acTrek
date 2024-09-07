@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 import HeadingText from '../components/ui/HeadingText';
 import MotionComponent from '../components/ui/motionComponent';
-import { Banner, Review } from 'app/api_interfaces/ApiProps';
+import { Banner } from 'app/api_interfaces/ApiProps';
 import get_image_from_path, { sectionBg } from 'app/components/actions/helpers';
 import ImageComponent from 'app/components/js/ImageComponent';
 interface WhyUsProps {

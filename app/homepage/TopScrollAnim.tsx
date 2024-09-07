@@ -41,7 +41,7 @@ const TopScrollAnim: FC<TopScrollAnimProps> = ({ text,imageSrc,viewport,link,slo
       controls:0,
     },
   };
-
+  console.log(imageSrc)
   return (
     <section ref={scrollRef} style={{ height: viewport }} className={`text-center relative bg-white`}>
       <div className="h-screen sticky top-0 w-full">

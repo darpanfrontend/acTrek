@@ -31,7 +31,7 @@ const MultiImageEnlarge: FC<MultiImageEnlargeProps> = ({images,description,link}
         <div className="w-1/3 flex-initial overflow-hidden relative flex-[0 auto]">
         {
           images.filter((item,index) => index < 3).map(item => (
-            <div key={item.source} className='last:mb-0 mb-4 relative overflow-hidden flex items-center justify-center h-[300px] ease-out-quint duration-300 transition-all'>
+            <div key={"another" + item.source} className='last:mb-0 mb-4 relative overflow-hidden flex items-center justify-center h-[300px] ease-out-quint duration-300 transition-all'>
               <Image
                 src={get_image_from_path(item.source)}
                 alt={item.alt}
@@ -47,7 +47,7 @@ const MultiImageEnlarge: FC<MultiImageEnlargeProps> = ({images,description,link}
         <motion.div transition={{ type: "spring", ease: 'linear', stiffness: 100 }} className='w-1/3 flex-none mx-4 overflow-hidden relative items-center will-change-[width]' style={{ width }}>
         {
           images.filter((item,index) => index >= 3 && index < 6).map((item,index) => (
-            <motion.div key={index} transition={{ type: "spring", ease: 'linear', stiffness: 100 }} className={`relative overflow-hidden flex items-center justify-center min-h-[300px] will-change-[width,height] ${index == 1 && 'my-4'}`} style={{ width, height }}>
+            <motion.div key={"another1" + index} transition={{ type: "spring", ease: 'linear', stiffness: 100 }} className={`relative overflow-hidden flex items-center justify-center min-h-[300px] will-change-[width,height] ${index == 1 && 'my-4'}`} style={{ width, height }}>
               <Image
                 src={get_image_from_path(item.source)}
                 alt={item.alt}
@@ -78,7 +78,7 @@ const MultiImageEnlarge: FC<MultiImageEnlargeProps> = ({images,description,link}
         <div className='w-1/3 flex-initial overflow-hidden relative flex-[0 auto]'>
         {
           images.filter((item,index) => index > 5).map(item => (
-            <div key={item.source} className='last:mb-0 mb-4 relative overflow-hidden flex items-center justify-center h-[300px] ease-out-quint duration-300 transition-all'>
+            <div key={"another3" + item.source} className='last:mb-0 mb-4 relative overflow-hidden flex items-center justify-center h-[300px] ease-out-quint duration-300 transition-all'>
               <Image
                 src={get_image_from_path(item.source)}
                 alt={item.alt}
